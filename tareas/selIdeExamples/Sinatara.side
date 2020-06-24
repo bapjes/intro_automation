@@ -1,0 +1,537 @@
+{
+  "id": "9a1346d6-63d8-421a-84ea-78d592f256c9",
+  "version": "2.0",
+  "name": "Sinatara",
+  "url": "https://evening-bastion-49392.herokuapp.com/",
+  "tests": [{
+    "id": "7541c893-6dff-446a-a709-3f598af4b009",
+    "name": "Scenario1_Valid_Login",
+    "commands": [{
+      "id": "938332d6-81ad-4665-ba79-5fff151c13ed",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67b71609-c821-456b-bbf1-c362d7522759",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1137x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52cc5efd-c40d-4659-8e9d-65d402e0ef6a",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=log in",
+      "targets": [],
+      "value": "log in"
+    }, {
+      "id": "4e7b0304-fc15-4248-ad23-9ad9d797482c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log in",
+      "targets": [
+        ["linkText=log in", "linkText"],
+        ["css=footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//footer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "696df17a-ae41-4d28-bdc0-176885449864",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35b00cfb-f019-4ef1-839e-c3cd4be523c0",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "frank"
+    }, {
+      "id": "4761cef0-0aa8-4a3d-b82f-c6207f637223",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19e2cab7-f0b3-48ad-b17f-31752bd419a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "sinatra"
+    }, {
+      "id": "17db9b2c-be9a-4fb5-bd8e-8573b5d216b3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input:nth-child(5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29d73825-2b6c-44a2-ad8e-31639278f6a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(5)",
+      "targets": [
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Log In']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7839af40-e10f-495e-8199-008dd44470a1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.flash",
+      "targets": [],
+      "value": "You are now logged in as frank"
+    }, {
+      "id": "105f4d44-aefa-440c-a2f3-d7b29b588b58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flash",
+      "targets": [
+        ["css=.flash", "css:finder"],
+        ["xpath=//div[@id='flash']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "590def1e-82ef-4934-b7b2-3f9df9e5b05c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log out",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4ab3b32-9645-47b1-9a39-034e41bdb1df",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.flash",
+      "targets": [],
+      "value": "You have now logged out"
+    }, {
+      "id": "ee86282a-3571-4ed7-81a2-097a9633fcac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flash",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b9a90ece-93a9-4286-af75-0f4793038a97",
+    "name": "Scenario2. Add_a _new_song",
+    "commands": [{
+      "id": "9fc6a76e-1663-4f88-b53d-306242ce14c0",
+      "comment": "",
+      "command": "open",
+      "target": "https://evening-bastion-49392.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b66f3cf0-4ee4-4899-8aa4-1223cde947db",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1137x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "005919e8-c281-4cae-9ca8-1e13ee2deca9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log in",
+      "targets": [
+        ["linkText=log in", "linkText"],
+        ["css=footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//footer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4f813fc-d72c-491f-85b3-10acd0d59209",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b35c1164-ba75-46d3-97d8-d7d256d013ad",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "frank"
+    }, {
+      "id": "cf08eee9-1e17-4c0e-b913-50943f97c912",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42847dd3-f11d-4a46-b746-16ae3be42410",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "sinatra"
+    }, {
+      "id": "1de3333a-8911-4e7b-a571-012ad7519c69",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(5)",
+      "targets": [
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Log In']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af211b79-a5f7-4928-8f79-7401bac5a1bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create a new song",
+      "targets": [
+        ["linkText=Create a new song", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Create a new song')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/songs/new')]", "xpath:href"],
+        ["xpath=//section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create a new song')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5edba7d-6e0d-4d57-a440-2237e52a4c6a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=section > h1",
+      "targets": [
+        ["css=section > h1", "css:finder"],
+        ["xpath=//section/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Add A New Song')]", "xpath:innerText"]
+      ],
+      "value": "Add A New Song"
+    }, {
+      "id": "9818e2d3-5c6c-460a-931d-8fc588fd102b",
+      "comment": "",
+      "command": "click",
+      "target": "css=section > h1",
+      "targets": [
+        ["css=section > h1", "css:finder"],
+        ["xpath=//section/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Add A New Song')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a63d642b-a1c9-4062-91ec-581e4f4f00c0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=title",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf98bf1f-e14e-460e-a816-d7d90addd4a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=song[title]", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Title"
+    }, {
+      "id": "5fdb2964-ea7b-4f15-86ae-f1003443d956",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=song[title]", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Impossible Dream"
+    }, {
+      "id": "ba94beeb-a4ae-4792-832b-d34206e5be73",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=length",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49524aec-1702-4f78-9412-b85c6633f6e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=length",
+      "targets": [
+        ["id=length", "id"],
+        ["name=song[length]", "name"],
+        ["css=#length", "css:finder"],
+        ["xpath=//input[@id='length']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33ceab9d-6f55-4c03-a8be-a0e27c8648ae",
+      "comment": "",
+      "command": "type",
+      "target": "id=length",
+      "targets": [
+        ["id=length", "id"],
+        ["name=song[length]", "name"],
+        ["css=#length", "css:finder"],
+        ["xpath=//input[@id='length']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "120"
+    }, {
+      "id": "057b5659-8560-498e-a083-5e1327564b91",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=released_on",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "999cc62b-4e03-4ebb-b1b2-76d531816fa4",
+      "comment": "",
+      "command": "click",
+      "target": "id=released_on",
+      "targets": [
+        ["id=released_on", "id"],
+        ["name=song[released_on]", "name"],
+        ["css=#released_on", "css:finder"],
+        ["xpath=//input[@id='released_on']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72531220-db26-4f70-b97b-88b6e6c9aefd",
+      "comment": "",
+      "command": "type",
+      "target": "id=released_on",
+      "targets": [
+        ["id=released_on", "id"],
+        ["name=song[released_on]", "name"],
+        ["css=#released_on", "css:finder"],
+        ["xpath=//input[@id='released_on']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "06/22/2020"
+    }, {
+      "id": "899bb74a-b330-4b70-a1a9-4de2b48fefac",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=lyrics",
+      "targets": [],
+      "value": "Lyrics:"
+    }, {
+      "id": "dbe46847-e4ee-4d53-aa9b-77d4f9b79782",
+      "comment": "",
+      "command": "click",
+      "target": "id=lyrics",
+      "targets": [
+        ["id=lyrics", "id"],
+        ["name=song[lyrics]", "name"],
+        ["css=#lyrics", "css:finder"],
+        ["xpath=//textarea[@id='lyrics']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fa024ed-37de-4164-8531-6c7d7d5757a2",
+      "comment": "",
+      "command": "type",
+      "target": "id=lyrics",
+      "targets": [
+        ["id=lyrics", "id"],
+        ["name=song[lyrics]", "name"],
+        ["css=#lyrics", "css:finder"],
+        ["xpath=//textarea[@id='lyrics']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "si"
+    }, {
+      "id": "9f4e1bc9-e011-4109-b4fd-711ae623bb93",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(9)",
+      "targets": [
+        ["css=input:nth-child(9)", "css:finder"],
+        ["xpath=//input[@value='Save Song']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0b1b1c3-de4f-491d-a185-53e2bc784255",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flash",
+      "targets": [
+        ["css=.flash", "css:finder"],
+        ["xpath=//div[@id='flash']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca55100a-a093-4eee-9118-14bb9648f581",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(2)",
+      "targets": [
+        ["css=h1:nth-child(2)", "css:finder"],
+        ["xpath=//section/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Impossible Dream')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "488b147a-55a8-4c94-af4f-2b50fc8007dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Release Date: 22 June 2020')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4e1eb3b-684a-4381-87f2-42e80008c3dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Length: 2 minutes 0 seconds')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1d0a82b-4a25-40e4-853f-171670b4e38e",
+      "comment": "",
+      "command": "click",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'si')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85d6130e-c141-4d40-bbf6-decb9404f20d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=back to songs index",
+      "targets": [
+        ["linkText=back to songs index", "linkText"],
+        ["css=p:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'back to songs index')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/songs')])[2]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'back to songs index')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa328cf5-aa56-4cba-95fc-e9ca9eb539e0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Impossible Dream",
+      "targets": [
+        ["linkText=Impossible Dream", "linkText"],
+        ["css=li:nth-child(39) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Impossible Dream')]", "xpath:link"],
+        ["xpath=//ul[@id='songs']/li[39]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/songs/67')]", "xpath:href"],
+        ["xpath=//li[39]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Impossible Dream')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a502b806-9ec9-4706-b1a0-f5fc40b11d6c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log out",
+      "targets": [
+        ["linkText=log out", "linkText"],
+        ["css=footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'log out')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//footer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0d32a527-4a33-43c6-95ad-9e2dbcdcc78f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7541c893-6dff-446a-a709-3f598af4b009"]
+  }],
+  "urls": ["https://evening-bastion-49392.herokuapp.com/"],
+  "plugins": []
+}
