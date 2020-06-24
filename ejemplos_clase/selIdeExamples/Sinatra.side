@@ -1,34 +1,147 @@
 {
-  "id": "87f396f3-fd99-4c83-9b4f-39e16c81ce3d",
+  "id": "ee843cf5-5671-4f4b-bcaa-6d9e018c0bc8",
   "version": "2.0",
-  "name": "Sinatra",
-  "url": "http://songs-by-sinatra.herokuapp.com",
+  "name": "sinatra",
+  "url": "https://songs-by-sinatra.herokuapp.com",
   "tests": [{
-    "id": "271e6254-9670-4c6e-b6de-4d1cd9fa8976",
-    "name": "LikeSong",
+    "id": "0c5549e9-1d2b-492c-a111-a52c1e082223",
+    "name": "list a song",
     "commands": [{
-      "id": "4857e725-e018-4bec-966c-20ef403df0cf",
+      "id": "894d1d35-7575-416a-b903-6e9e5e140797",
+      "comment": "paso 1",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1dd7097-2d93-4847-9029-d4de2107291f",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "ebcecf6b-b7f8-4b28-8731-1eb4a3a01ba6",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "974x1040",
+      "id": "0e34bea6-74ca-4ec9-bece-82a202bfbad9",
+      "comment": "verificacion 1",
+      "command": "",
+      "target": "",
       "targets": [],
       "value": ""
     }, {
-      "id": "b451c7c4-b607-4155-ab61-8b1f8313a3dd",
+      "id": "3edec751-922b-45f3-b78e-6390a4d7a02b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae6af39c-b6b2-4857-8bb3-2b5e6a41875a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//*[@src='/images/sinatra.jpg']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec218305-b204-4655-a349-ede681a5300c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=log in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e81203d-e8ca-4490-9396-66d0099c659a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log in",
+      "targets": [
+        ["linkText=log in", "linkText"],
+        ["css=footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//footer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88d7da5c-017f-48d0-a238-37bbc057503c",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f44ed54-3ba0-4507-974f-41f49c4559e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "frank"
+    }, {
+      "id": "1ade8461-f6c7-4fe4-baec-0ef1c7cc8cc2",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "sinatra"
+    }, {
+      "id": "2bf1d28b-a969-4665-a848-c57d77478390",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(5)",
+      "targets": [
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Log In']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "059c18ed-99ad-4db9-9e16-3bca6ca60b2c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=log out",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "4f68f69b-97fd-4204-9a6b-cd3886c96ebb",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "linkText=Songs",
+      "target": "linkText=log out",
       "targets": [],
       "value": ""
     }, {
-      "id": "d6168c61-335c-4832-973f-367b422351ba",
+      "id": "23ef0681-dbf6-44f8-bdcb-eaaebf1332e1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=flash",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a07da514-5cd3-4445-8b06-f09af1a7704d",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=flash",
+      "targets": [],
+      "value": "You are now logged in as frank"
+    }, {
+      "id": "21cfdc0a-8746-4901-be0a-84f24b28d9c7",
       "comment": "",
       "command": "click",
       "target": "linkText=Songs",
@@ -42,77 +155,49 @@
       ],
       "value": ""
     }, {
-      "id": "fb864a7d-add4-4bbd-8514-06764948d971",
-      "comment": "",
-      "command": "verifyText",
-      "target": "linkText=Songs",
-      "targets": [],
-      "value": "Songs"
-    }, {
-      "id": "4043f79b-e05a-4afe-a391-ff320d47e8f1",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "id=songs",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "3822445a-1c92-4f4b-9f41-c35a4fa73fa3",
+      "id": "9fb546dc-2a15-4736-85eb-1a5ec44b9046",
       "comment": "",
       "command": "click",
-      "target": "xpath=//ul[@id='songs']//a",
+      "target": "linkText=Come Fly With Me",
       "targets": [
-        ["linkText=Lo que un dia fue no sera", "linkText"],
-        ["css=#songs > li:nth-child(1) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Lo que un dia fue no sera')]", "xpath:link"],
-        ["xpath=//ul[@id='songs']/li/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/songs/7')]", "xpath:href"],
-        ["xpath=//section/ul/li/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Lo que un dia fue no sera')]", "xpath:innerText"]
+        ["linkText=Come Fly With Me", "linkText"],
+        ["css=li:nth-child(28) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Come Fly With Me')]", "xpath:link"],
+        ["xpath=//ul[@id='songs']/li[28]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/songs/278')]", "xpath:href"],
+        ["xpath=//li[28]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Come Fly With Me')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "c9271559-eb35-44ac-9788-ca3e36ea1b9c",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "xpath=//section/h1",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "15c41949-f763-4f0b-a27e-a2a6af6f3a69",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "xpath=//section/p",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "035e803b-9997-4677-8ab0-f96395e861ed",
-      "comment": "",
-      "command": "waitForElementVisible",
-      "target": "css=input",
-      "targets": [],
-      "value": "3000"
-    }, {
-      "id": "63980764-f9a7-4ed4-a5d7-64d57d5bd00e",
+      "id": "27bf8938-7e45-44c0-ad1b-b29e068ae4c2",
       "comment": "",
       "command": "click",
-      "target": "css=input",
+      "target": "xpath=//input[@value='Like']",
       "targets": [
-        ["css=input", "css:finder"],
+        ["css=form:nth-child(2) > input", "css:finder"],
         ["xpath=//input[@value='Like']", "xpath:attributes"],
         ["xpath=//div[@id='like']/form/input", "xpath:idRelative"],
         ["xpath=//input", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "16a49a87-1cd6-4490-876b-daf13c4fcbc0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log out",
+      "targets": [],
+      "value": ""
     }]
   }],
   "suites": [{
-    "id": "296b3e3d-5398-4399-9a71-d8576bac1e6a",
+    "id": "fe3465ba-f5e7-4b49-86e0-dd17980a17b7",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["271e6254-9670-4c6e-b6de-4d1cd9fa8976"]
+    "tests": ["0c5549e9-1d2b-492c-a111-a52c1e082223"]
   }],
-  "urls": ["http://songs-by-sinatra.herokuapp.com/"],
+  "urls": ["https://songs-by-sinatra.herokuapp.com/"],
   "plugins": []
 }
