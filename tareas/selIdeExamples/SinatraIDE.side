@@ -238,7 +238,7 @@
       "id": "1de3333a-8911-4e7b-a571-012ad7519c69",
       "comment": "",
       "command": "click",
-      "target": "css=input:nth-child(5)",
+      "target": "xpath=//input[@value='Log In']",
       "targets": [
         ["css=input:nth-child(5)", "css:finder"],
         ["xpath=//input[@value='Log In']", "xpath:attributes"],
@@ -263,7 +263,7 @@
       "id": "d5edba7d-6e0d-4d57-a440-2237e52a4c6a",
       "comment": "",
       "command": "assertText",
-      "target": "css=section > h1",
+      "target": "xpath=//h1[contains(.,'Add A New Song')]",
       "targets": [
         ["css=section > h1", "css:finder"],
         ["xpath=//section/h1", "xpath:position"],
@@ -274,7 +274,7 @@
       "id": "9818e2d3-5c6c-460a-931d-8fc588fd102b",
       "comment": "",
       "command": "click",
-      "target": "css=section > h1",
+      "target": "xpath=//h1[contains(.,'Add A New Song')]",
       "targets": [
         ["css=section > h1", "css:finder"],
         ["xpath=//section/h1", "xpath:position"],
@@ -417,7 +417,7 @@
       "id": "9f4e1bc9-e011-4109-b4fd-711ae623bb93",
       "comment": "",
       "command": "click",
-      "target": "css=input:nth-child(9)",
+      "target": "xpath=//input[@value='Save Song']",
       "targets": [
         ["css=input:nth-child(9)", "css:finder"],
         ["xpath=//input[@value='Save Song']", "xpath:attributes"],
@@ -450,7 +450,7 @@
       "id": "488b147a-55a8-4c94-af4f-2b50fc8007dd",
       "comment": "",
       "command": "click",
-      "target": "css=p:nth-child(3)",
+      "target": "xpath=//p[contains(.,'Release Date: 22 June 2020')]",
       "targets": [
         ["css=p:nth-child(3)", "css:finder"],
         ["xpath=//p", "xpath:position"],
@@ -461,7 +461,7 @@
       "id": "c4e1eb3b-684a-4381-87f2-42e80008c3dc",
       "comment": "",
       "command": "click",
-      "target": "css=p:nth-child(4)",
+      "target": "xpath=//p[contains(.,'Length: 2 minutes 0 seconds')]",
       "targets": [
         ["css=p:nth-child(4)", "css:finder"],
         ["xpath=//p[2]", "xpath:position"],
